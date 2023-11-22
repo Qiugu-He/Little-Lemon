@@ -10,7 +10,6 @@ const ocassions = [
         label: 'Anniversary',
         value: 'anniversary'
     }
-    
 ]
 
 const DateSelector = (props) => {

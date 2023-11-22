@@ -1,6 +1,5 @@
 import React from 'react'
 import './OrderOnline.css'
-import { images } from '../../constants';
 
 function OrderOnline() {
   return (

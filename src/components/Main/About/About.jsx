@@ -19,8 +19,6 @@ const About = () => {
         <div
             className="app_about-section"
         >
-            
-            
                 <div className="app_about-description-box">
                     <h1 className="app__about-title">{aboutData.title}</h1>
                     <br />
@@ -33,24 +31,23 @@ const About = () => {
                         {aboutData.description}
                     </p>
                 </div>
-           
             {/* <div className="app__about-image-box-section"> */}
                 <div className="app__about-image-holder">
                         <div className="app__about-image-box img-box-1"
-                            style= 
+                            style=
                             {
                                 {
                                     backgroundImage: `url(${aboutData.image2})`
                                 }
                             }
                         />
-                        <div className="app__about-image-box img-box-2" 
+                        <div className="app__about-image-box img-box-2"
                             style=
-                            { 
+                            {
                                 {
                                     backgroundImage: `url(${ aboutData.image1 })`
-                                } 
-                            } 
+                                }
+                            }
                         />
                 </div>
             {/* </div> */}

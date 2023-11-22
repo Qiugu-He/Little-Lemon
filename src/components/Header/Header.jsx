@@ -12,12 +12,9 @@ import { pulse } from 'react-animations';
 const Pulse = styled.div`animation: 6s ${keyframes`${pulse}`} infinite`;
 
 const Header = () => {
-
     const { title, location, description, btnname, image} = useContext(DataContext);
-    
-    return ( 
+    return (
     <header>
-        
         <div className="app__header-data">
             <BlockRevealAnimation color="#F4CE14">
                 <h1>
@@ -40,7 +37,7 @@ const Header = () => {
         </div>
         <BlockRevealAnimation color='#333333'>
             <Pulse>
-                <div 
+                <div
                     className="app__header-image"
                     style={{backgroundImage:`url(${image})`}}
                 />

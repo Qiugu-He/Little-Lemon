@@ -2,7 +2,7 @@ import BookingForm from "./BookingForm";
 import { fetchAPI, submitAPI} from '../../utilities/API';
 import { React, useReducer } from "react";
 
-import { useNavigate, redirect } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const updateTimeSlots = (availableTimeSlots, date) => {

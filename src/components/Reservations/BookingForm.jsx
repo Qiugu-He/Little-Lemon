@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import GuestSelector from './GuestSelector/GuestSelector';
 import DateSelecotr from './DateSelector/DateSelector';
 import TimeSelector from './TimeSelector/TimeSelector';
@@ -32,14 +32,11 @@ function BookingForm(props) {
   }
 
   // handler function in the Parent component to get date selected from child ccomponent
-
   const chooseDate = (date) => {
     setDate(date);
     setReservation({...reservation, date: date});
-
     props.dispatchTimeslotsOnDateChange(date);
-
-  }    
+  }
 
   const chooseOcassion = (ocassion) => {
     setOccasion(ocassion);
@@ -55,15 +52,14 @@ function BookingForm(props) {
     e.preventDefault();
 
     // Submission happens here
-    
     props.submitReservation(reservation);
   }
 
 
   const validateReservation = () => {
-    if (reservation.time !== '' && 
-        reservation.date !== '' && 
-        reservation.guests !== '' && 
+    if (reservation.time !== '' &&
+        reservation.date !== '' &&
+        reservation.guests !== '' &&
         reservation.ocassion !== '') {
       return true;
     }

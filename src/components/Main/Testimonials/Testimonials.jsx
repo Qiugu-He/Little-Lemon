@@ -4,7 +4,7 @@ import { images } from "../../../constants";
 import './Testimonials.css';
 import { AiFillStar } from 'react-icons/ai';
 import styled, { keyframes } from 'styled-components';
-import { pulse } from 'react-animations'; 
+import { pulse } from 'react-animations';
 
 const Pulse = styled.div`animation: 5s ${keyframes`${pulse}`} infinite`;
 

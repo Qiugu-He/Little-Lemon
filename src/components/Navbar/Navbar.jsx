@@ -27,9 +27,7 @@ const Navbar = () => {
             <HashLink className="link" smooth to="/#Menu">Menu</HashLink>
             <HashLink className="link" smooth to="/#About">About</HashLink>
         </ul>
-           
         {/* Mobile Navigation */}
-        
         <div className="app__navbar-menu">
             <HiMenuAlt4
                 onClick={() => { setToggle(true) }}

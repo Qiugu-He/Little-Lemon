@@ -19,14 +19,13 @@ const FooterItems = (props) => {
                 })
             }
         </ul>
-        
     </div>);
 };
 
 const Footer = () => {
     return (<footer className="app__footer-section">
             <div className="app__about-image-box img-box-1"
-                style= 
+                style=
                 {
                     {
                         backgroundImage: `url(${images.resturant})`

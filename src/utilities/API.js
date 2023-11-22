@@ -7,12 +7,6 @@ const seededRandom = function (seed) {
     };
 }
 
-/**
- * 
- * @param {shahandfahad} date 
- * @returns Modifying fetchAPI function to return an object with three arrays of strings
- *         representing the available times for morning, afternoon and evening
- */
 const fetchAPI = function(date) {
     let result = {morning: [], afternoon: [], evening: []};
     let random = seededRandom(date.getDate());
