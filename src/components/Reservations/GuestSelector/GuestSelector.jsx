@@ -10,14 +10,11 @@ const style =  {
 const GuestSelector = ({ chooseGuest }) => {
     let [guest, setGuest] = useState(1);
     const [warning, setWarning] = useState('');
-
     const increment = () => {
-
         if (guest < 10) {
             guest++;
             setGuest(guest);
             setWarning('');
-
             // pass number guests to parent component (Reservation)
             chooseGuest(guest);
         } else {
@@ -32,7 +29,6 @@ const GuestSelector = ({ chooseGuest }) => {
             guest--;
             setGuest(guest);
             setWarning('');
-
             // pass number guests to parent (Reservation)
             chooseGuest(guest);
         } else {

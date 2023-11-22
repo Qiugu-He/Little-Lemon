@@ -4,7 +4,6 @@ import { React, useReducer } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-
 const updateTimeSlots = (availableTimeSlots, date) => {
   const response = fetchAPI(new Date(date));
  
@@ -14,7 +13,6 @@ const updateTimeSlots = (availableTimeSlots, date) => {
 }
 
 const initTimeSlots = (initAvaliableTimeSlots) => {
-    // return [...initAvaliableTimeSlots, ...fetchAPI(new Date())];
     return {
         morning: [...initAvaliableTimeSlots.morning, ...fetchAPI(new Date()).morning], 
         afternoon: [...initAvaliableTimeSlots.afternoon, ...fetchAPI(new Date()).afternoon], 
@@ -23,7 +21,6 @@ const initTimeSlots = (initAvaliableTimeSlots) => {
 }
 
 const Reservations = () => {
-
   // Reducer hook which will update the available time slots and initialize the available time slots
    const [
     availableTimeSlots, 

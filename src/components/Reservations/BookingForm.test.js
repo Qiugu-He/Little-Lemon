@@ -2,17 +2,15 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import BookingForm from "./BookingForm";
 
 //TODO: TEST NEEDS tobe Corrected, as they failed abnormally
-
   const availableTimeSlots = ['17:00', '17:30'];
   const today = new Date().toISOString().split('T')[0];
-  const dispatchOnDateChange = jest.fn();
   const submitReservation = jest.fn();
 
 
 test ('Should Successfully Submit Form with all data Fileds Filled', () =>{
-    render(<BookingForm 
-        submitReservation={submitReservation} 
-        availableTimeSlots={availableTimeSlots} 
+    render(<BookingForm
+        submitReservation={submitReservation}
+        availableTimeSlots={availableTimeSlots}
       />);
 
     const submitButtom = screen.getByRole('button');

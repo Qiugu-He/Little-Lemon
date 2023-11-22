@@ -2,10 +2,8 @@
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     padding: 50px;
-    
     font-family: 'Markazi Text', serif;
     font-size: 48px;
 
@@ -46,7 +44,6 @@ input[type="radio"] {
         font-size: 28px;
         padding: 25px;
     }
-    
     .timeslots-capsules {
         gap: 0.5rem;
     }

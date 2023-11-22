@@ -1,12 +1,12 @@
 import React from "react";
 import images from "../../constants/images";
-// Custom Style
+
 const style = {
-    display: 'flex', 
-    flexDirection: 'column', 
+    display: 'flex',
+    flexDirection: 'column',
     gap: '1rem',
-    justifyContent: 'center', 
-    alignItems: 'center', 
+    justifyContent: 'center',
+    alignItems: 'center',
     height: '50vh',
     width: '100%',
     fontSize: '2rem',
@@ -15,7 +15,6 @@ const style = {
     textAlign: 'center',
     textTransform: 'uppercase',
     padding: '1rem',
-    
 }
 
 const ConfirmedBooking = () => {

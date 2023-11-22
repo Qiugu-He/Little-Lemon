@@ -45,8 +45,6 @@ function BookingForm(props) {
     setReservation({...reservation, ocassion: ocassion});
   }
 
-
-
   // Form Submission
   const onSubmitHandler = (e) => {
     e.preventDefault();
@@ -54,7 +52,6 @@ function BookingForm(props) {
     // Submission happens here
     props.submitReservation(reservation);
   }
-
 
   const validateReservation = () => {
     if (reservation.time !== '' &&
@@ -72,11 +69,8 @@ function BookingForm(props) {
     <div>
       <form onSubmit={onSubmitHandler}>
         <GuestSelector chooseGuest={ chooseGuest } />
-
         <DateSelecotr chooseDate={chooseDate} chooseOcassion={chooseOcassion} ocassion={ocassion}/>
-
         <TimeSelector chooseTime={ chooseTime } availableTimeSlots={props.availableTimeSlots} />
-
         { // Enable, Disable Submit button on form validation
           validateReservation() ? <Reserve value={0} /> : <Reserve value={1} />
         }

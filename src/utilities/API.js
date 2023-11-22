@@ -10,9 +10,6 @@ const seededRandom = function (seed) {
 const fetchAPI = function(date) {
     let result = {morning: [], afternoon: [], evening: []};
     let random = seededRandom(date.getDate());
-
-    // ((parseInt(i) % 12) || 12) convert time to 12hr format
-
     // Morning Timings
     for(let i = 9; i < 12; i++) {
         if(random() < 0.5) {
@@ -21,8 +18,7 @@ const fetchAPI = function(date) {
         if(random() < 0.5) {
             result.morning.push(((parseInt(i) % 12) || 12) + ':30');
         }
-    }  
-    
+    }
     // Afternoon Timings
     for(let i = 12; i < 16; i++) {
         if(random() < 0.5) {
@@ -32,7 +28,6 @@ const fetchAPI = function(date) {
             result.afternoon.push(((parseInt(i) % 12) || 12) + ':30');
         }
     }
-    
     // Evening Timings
     for(let i = 16; i < 21; i++) {
         if(random() < 0.5) {
@@ -42,8 +37,6 @@ const fetchAPI = function(date) {
             result.evening.push(((parseInt(i) % 12) || 12) + ':30');
         }
     }
-
-
     return result;
 };
 

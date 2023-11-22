@@ -3,7 +3,6 @@ import './Navbar.css';
 import { images } from "../../constants";
 import {HiMenuAlt4, HiX} from 'react-icons/hi';
 import { useState } from "react";
-
 import {Link } from "react-router-dom";
 
 // Navigate to Coponents on with id on different page

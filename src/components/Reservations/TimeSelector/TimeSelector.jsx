@@ -1,12 +1,10 @@
 import './TimeSelector.css';
 
 const TimeCapsule = (props) => {
-
     // get the current time value  and pass to parent component
     const handleRadioChage = (e) => {
         props.chooseTime(e.target.value);
     }
-
 
     return (
             <div>
@@ -30,25 +28,18 @@ const TimeCapsule = (props) => {
 
 const TimeSelector = (props) => {
     const hour = new Date().toTimeString().split(' ')[0].split(':');
-    // console.log("Time: ", hour);
-
     let isMorning = false;
     let isAfternoon = false;
     let isEvening = false;
-    // const hour = 21;
     if (parseInt(hour) >= 9 && parseInt(hour) < 12) {
-
         isMorning = true;
         isAfternoon = false;
         isEvening = false;
-
     } else if (parseInt(hour) >= 12 && parseInt(hour) < 16) {
-
         isMorning = false;
         isAfternoon = true;
         isEvening = false;
     } else if (parseInt(hour) >= 16 && parseInt(hour) < 21) {
-
         isMorning = false;
         isAfternoon = false;
         isEvening = true;
