@@ -4,8 +4,8 @@ A table-booking system using React. It's a fully responsive web app that allows 
 
 ### Screenshot
 
-![restaurantBookingSystem]()
-![restaurantBookingSystem]()
+![restaurantBookingSystem](https://github.com/Qiugu-He/Little-Lemon/blob/master/src/assets/screenshot1.jpeg)
+![restaurantBookingSystem](https://github.com/Qiugu-He/Little-Lemon/blob/master/src/assets/screenshot2.jpeg)
 
 ### Links
 
