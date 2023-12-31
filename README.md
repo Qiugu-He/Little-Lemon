@@ -2,14 +2,15 @@
 
 A table-booking system using React. It's a fully responsive web app that allows users to reserve a table for the Little Lemon restaurant. 
 
+### Links
+
+- Live : [Demo](https://little-lemon-k9p3kbx9a-qiugu.vercel.app/)
+
 ### Screenshot
 
 ![restaurantBookingSystem](https://github.com/Qiugu-He/Little-Lemon/blob/master/src/assets/screenshot1.jpeg)
 ![restaurantBookingSystem](https://github.com/Qiugu-He/Little-Lemon/blob/master/src/assets/screenshot2.jpeg)
 
-### Links
-
-- Live : [Demo](https://little-lemon-k9p3kbx9a-qiugu.vercel.app/)
 
 ### Built with
 
@@ -23,12 +24,12 @@ A table-booking system using React. It's a fully responsive web app that allows 
 
 
 
-### Instruction:
-1. Download or fork the repository
-2. npm install
-3. to build: 
-    - npm run build
-4. to run on local:
-    - npm start
-5. to deploy:
-    - npm run deploy
+### Dev Instruction:
+- ownload or fork the repository
+- Install dependencies: **npm install**
+- Build: **npm run build**
+- Run on local: **npm start**
+- Deploy: **npm run deploy**
+
+### Author: 
+[@Qiugu He](https://github.com/Qiugu-He)
