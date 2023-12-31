@@ -11,24 +11,24 @@ A table-booking system using React. It's a fully responsive web app that allows 
 
 - Live : [Demo](https://little-lemon-k9p3kbx9a-qiugu.vercel.app/)
 
+### Built with
+
+- [React](https://beta.reactjs.org/) - React 
+- [React Router v6+](https://reactrouter.com/en/main) - For routes
+- [React Scroll](https://www.npmjs.com/package/react-scroll) - For smooth scroll
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - For unit testing
+- CSS Flexbox and Grid
+- Semantic HTML
+- Open Graph Protocol
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Little Lemon
-### To run:
-1. npm install
-2. npm start
+### Instruction:
+1. Download or fork the repository
+2. npm install
+3. to build: 
+    - npm run build
+4. to run on local:
+    - npm start
+5. to deploy:
+    - npm run deploy
