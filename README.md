@@ -25,7 +25,7 @@ A table-booking system using React. It's a fully responsive web app that allows 
 
 
 ### Dev Instruction:
-- ownload or fork the repository
+- Download or fork the repository
 - Install dependencies: **npm install**
 - Build: **npm run build**
 - Run on local: **npm start**
