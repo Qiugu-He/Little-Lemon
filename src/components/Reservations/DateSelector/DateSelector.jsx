@@ -41,17 +41,16 @@ const DateSelector = (props) => {
         Else we are closed
     */
     const hour = new Date().toTimeString().split(' ')[0].split(':');
-    // console.log(parseInt(hour[0]))
     
     const startingTime = 8; // 8 AM
     const closoingTime = 21; // 9 PM
 
     if (parseInt(hour[0]) > startingTime && parseInt(hour[0]) < closoingTime) {
         // console.log('WE are Open!');
-        cafeStatus = 'Open';
+        cafeStatus = 'We are open, reserve now!';
     } else {
         // console.log('WE are closed!');
-        cafeStatus = 'closed';
+        cafeStatus = 'We are closed';
     }
 
     // get date value from input using useRef hook
@@ -67,49 +66,38 @@ const DateSelector = (props) => {
     }
     return (
         <div className="reservation__date-selector">
+        <div className='open-closed'>
+                <h3 className={`title ${cafeStatus} status`}>{cafeStatus}</h3>
+        </div>
         <div className='reservation__date-selector-date-time'>
-            <h1 className='title'>Date</h1>
             <div className='date-time'>
-
-                <div className='date'>
-                    {
-                        dateStr[2]  + " " + dateStr[1] + " " + dateStr[3]
-                    }
-                </div>
-
-                <div className='time'>
-                    {
-                        timeStr[0] + " " + timeStr[1]
-                    }
-                </div>
-
+                {   dateStr[2]  + " " + dateStr[1] + " " + dateStr[3] + ", " + timeStr[0] + " " + timeStr[1] }
             </div>
         </div>
-        <div className='open-closed'>
-                <h1 className={`title ${cafeStatus} status`}>{cafeStatus}</h1>
-        </div>
-
         {/* add date selector and ocassion selector */}
         {/* get date and ocassion values and pass to parent component */}
         <div className="choose-date">
-            <input 
-                ref={dateRef} 
-                onChange={handleClickedDate}
-                type="date" 
-                className='date-selector' />
-                {/* provide defalut value: theOcassion */}
-                {/* ocassion value is comming from parent and then onchange, send data to parent */}
-            <select className='ocassion-selector' value={props.ocassion}  onChange={handleOcassionChange}>
-               {
-                ocassions.map((ocassion) => {
-                return (
-                    <option value={ocassion.value}>
-                        {ocassion.label}
-                    </option>
-                );
-                })
-               }
-            </select>
+            <h2>Select your date</h2>
+            <div className="choose-date-2">
+                <input 
+                    ref={dateRef} 
+                    onChange={handleClickedDate}
+                    type="date" 
+                    className='date-selector' />
+                    {/* provide defalut value: theOcassion */}
+                    {/* ocassion value is comming from parent and then onchange, send data to parent */}
+                <select className='ocassion-selector' value={props.ocassion}  onChange={handleOcassionChange}>
+                {
+                    ocassions.map((ocassion) => {
+                    return (
+                        <option value={ocassion.value}>
+                            {ocassion.label}
+                        </option>
+                    );
+                    })
+                }
+                </select>
+            </div>
         </div>
         </div>
     );

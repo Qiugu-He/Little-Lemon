@@ -13,6 +13,11 @@ const Pulse = styled.div`animation: 6s ${keyframes`${pulse}`} infinite`;
 
 const Header = () => {
     const { title, location, description, btnname, image} = useContext(DataContext);
+    const handleButtonClick = () => {
+        // Redirect to the desired URL
+        window.location.href = '/Reservations';
+      };
+
     return (
     <header>
         <div className="app__header-data">
@@ -30,7 +35,7 @@ const Header = () => {
                 </p>
             </BlockRevealAnimation>
             <BlockRevealAnimation color="#F4CE14">
-                <button>
+                <button onClick={handleButtonClick}>
                     {btnname}
                 </button>
             </BlockRevealAnimation>

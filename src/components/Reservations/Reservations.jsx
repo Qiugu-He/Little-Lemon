@@ -6,10 +6,9 @@ import { useNavigate } from "react-router-dom";
 
 const updateTimeSlots = (availableTimeSlots, date) => {
   const response = fetchAPI(new Date(date));
- 
   return (
     response.morning.length !== 0 && response.afternoon.length !== 0 && response.evening.length !== 0
-    ) ? response : availableTimeSlots; 
+    ) ? response : availableTimeSlots;
 }
 
 const initTimeSlots = (initAvaliableTimeSlots) => {

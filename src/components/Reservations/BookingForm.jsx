@@ -68,9 +68,10 @@ function BookingForm(props) {
   return (
     <div>
       <form onSubmit={onSubmitHandler}>
-        <GuestSelector chooseGuest={ chooseGuest } />
+        
         <DateSelecotr chooseDate={chooseDate} chooseOcassion={chooseOcassion} ocassion={ocassion}/>
         <TimeSelector chooseTime={ chooseTime } availableTimeSlots={props.availableTimeSlots} />
+        <GuestSelector chooseGuest={ chooseGuest } />
         { // Enable, Disable Submit button on form validation
           validateReservation() ? <Reserve value={0} /> : <Reserve value={1} />
         }

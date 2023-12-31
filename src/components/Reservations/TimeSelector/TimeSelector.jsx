@@ -5,27 +5,25 @@ const TimeCapsule = (props) => {
     const handleRadioChage = (e) => {
         props.chooseTime(e.target.value);
     }
-
     return (
-            <div>
-                <h1>{props.morning}</h1>
-                <div className='timeslots-capsules' >
-                {
-                    props.slots.map((item) => {
-                        return (
-                        <span className='radio-lablel-box'>
-                            <label htmlFor={item} className='radio-btn-label'>
-                                <input type="radio" name="timeslots-m" id={item} value={item} onClick={handleRadioChage} />
-                                {item}
-                            </label>
-                        </span>)
-                    })
-                }
-                </div>
+        <div>
+            <h2>{props.morning} Avaliability</h2>
+            <div className='timeslots-capsules' >
+            {
+                props.slots.map((item) => {
+                    return (
+                    <span className='radio-lablel-box'>
+                        <label htmlFor={item} className='radio-btn-label'>
+                            <input type="radio" name="timeslots-m" id={item} value={item} onClick={handleRadioChage} />
+                            {item}
+                        </label>
+                    </span>)
+                })
+            }
             </div>
+        </div>
     );
 }
-
 const TimeSelector = (props) => {
     const hour = new Date().toTimeString().split(' ')[0].split(':');
     let isMorning = false;
@@ -43,22 +41,15 @@ const TimeSelector = (props) => {
         isMorning = false;
         isAfternoon = false;
         isEvening = true;
-
     }
-
     return (
         <div className="reservation__time-selector">
             {
                 (isMorning && ( <TimeCapsule chooseTime={props.chooseTime} morning="Morning" slots={props.availableTimeSlots.morning} /> ))
-
                 ||
-
                 (isAfternoon && ( <TimeCapsule chooseTime={props.chooseTime} morning="Afternoon" slots={props.availableTimeSlots.afternoon}/>))
-
                 ||
-
                 (isEvening && ( <TimeCapsule chooseTime={props.chooseTime} morning="Evening" slots={props.availableTimeSlots.evening}/> ))
-
             }
         </div>
     );

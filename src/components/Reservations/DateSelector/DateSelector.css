@@ -2,43 +2,43 @@
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
-
     justify-content: center;
+    align-content: center;
     padding: 50px;
-
     font-family: 'Markazi Text', serif;
     font-size: 48px;
-
-    background-color: #EDEFEE;
+    padding-right: 15px;
 }
 
 .reservation__date-selector-date-time {
     /* border: 1px solid black; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 .title {
     color: #495E57;
+    
 }
 .date-time {
     /* border: 1px solid red; */
-    display: flex;
-
     flex-direction: column;
     justify-content: center;
-
     text-align: center;
-
     padding: 5px;
+    margin-left: 15px;
+    
 }
 
 .date, .time {
     background-color: #495E57;
-    color: #EDEFEE;
     border: 1px solid #EDEFEE;
     border-radius: 7px;
     padding: 7px;
+    font-size:large;
+    
 }
 
 .open-closed {
@@ -48,9 +48,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 25px;
-
     text-transform: uppercase;
-
     font-size: 48px;
 }
 
@@ -60,27 +58,39 @@
 
 .choose-date {
     /* border: 1px solid red; */
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     gap: 3rem;
     padding: 3rem;
-    background-color: #f1f1f1;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+    font-size:xx-large;
+}
+
+.choose-date {
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+    padding-right: 35px;
+}
+
+.choose-date-2 {
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
 }
 
 input[type="date"] {
     background-color: #495E57;
     color: #ffffff;
-    font-size: 24px;
-    padding: 10px;
+    font-size:large;
     border: none;
     outline: none;
     border-radius: 5px;
-
-    width: 200px;
-    height: 60px;
+    width: 150px;
+    height: 40px;
+    padding-left: 10px;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -88,18 +98,21 @@ input[type="date"] {
     padding: 5px;
     cursor: pointer;
     border-radius: 3px;
+    margin-right: 3px;
+    
 }
-
 .ocassion-selector {
-        background-color: #495E57;
-        color: #ffffff;
-        font-size: 24px;
-        padding: 10px;
-        border: none;
-        outline: none;
-        border-radius: 5px;
-    width: 200px;
-        height: 60px;
+    background-color: #495E57;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-size:large;
+    margin-left: 15px;
 }
 
 select {

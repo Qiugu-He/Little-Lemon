@@ -39,11 +39,8 @@ const GuestSelector = ({ chooseGuest }) => {
 
     return (
         <div className='app__reservation-guest'>
-
-            <h1 className='guest-title'>Guest</h1>
-
+            <h3 className='guest-title'>Guest</h3>
             <div className='app__reservation-guest-counter-box'>
-
                     <div className="app__reservation-guest-counter">
                         <CgMathMinus className='guest-decrement' onClick={decrement}/>
                             <pre> {guest} </pre>
@@ -54,9 +51,7 @@ const GuestSelector = ({ chooseGuest }) => {
                         ||
                     (guest >= 6 && (<span style={style}>{warning}</span>))
                 }
-
             </div>
-
         </div>
     );
 };
