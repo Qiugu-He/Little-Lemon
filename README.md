@@ -23,7 +23,6 @@ A table-booking system using React. It's a fully responsive web app that allows 
 - Open Graph Protocol
 
 
-
 ### Dev Instruction:
 - Download or fork the repository
 - Install dependencies: **npm install**
